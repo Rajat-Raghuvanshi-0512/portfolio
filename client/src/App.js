@@ -1,14 +1,16 @@
 import React from "react";
-import { Header, Footer, Home, Testimonials, About, Work } from "./components";
+import { Header, Footer, Home, About, Work, Skills } from "./components";
 
 const App = () => {
   return (
     <>
       <Header />
-      <Home />
-      <About />
-      <Work />
-      <Testimonials />
+      <main>
+        <Home />
+        <About />
+        <Work />
+        <Skills />
+      </main>
       <Footer />
     </>
   );

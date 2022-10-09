@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: "415px",
+        sm: "550px",
+      },
+      fontFamily: {
+        roboto: ["Roboto", "Roboto"],
       },
       backgroundImage: {
         bgLight: "url('/src/assets/bgIMG.png')",
