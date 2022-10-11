@@ -6,4 +6,5 @@ export { default as Skills } from "./Skills";
 export { default as Copyright } from "./Copyright";
 export { default as SocialMedia } from "./SocialMedia";
 export { default as NavigationDots } from "./NavigationDots";
+export { default as Contact } from "./Contact";
 export { default as Footer } from "./Footer";

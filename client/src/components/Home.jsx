@@ -97,7 +97,7 @@ const Home = () => {
       <motion.div
         whileInView={{ scale: [0, 1], opacity: [0, 1] }}
         transition={{ duration: 0.7 }}
-        className="flex md:flex-col justify-center"
+        className="flex md:flex-col justify-center pb-14 lg:pb-0"
       >
         <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full shadow-lg drop-shadow-lg dark:shadow-[rgba(255,255,255,0.15)] p-3 lg:p-4 bg-white ">
           <img

@@ -4,5 +4,6 @@ import NodeLogo from "../assets/node.png";
 import Circle from "../assets/circle.svg";
 import BgImg from "../assets/bgIMG.png";
 import BgWhite from "../assets/bgWhite.png";
+import PhoneIcon from "../assets/mobile.png";
 
-export { ReactLogo, ReduxLogo, NodeLogo, Circle, BgImg, BgWhite };
+export { ReactLogo, ReduxLogo, NodeLogo, Circle, BgImg, BgWhite, PhoneIcon };

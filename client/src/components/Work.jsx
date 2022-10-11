@@ -40,7 +40,7 @@ const Work = () => {
   }, []);
 
   return (
-    <div className="pt-32 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-40 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:bg-blend-overlay dark:saturate-50 dark:backdrop-saturate-150 dark:backdrop-brightness-75">
+    <div className="pt-14 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-40 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:bg-blend-overlay dark:saturate-50 dark:backdrop-saturate-150 dark:backdrop-brightness-75">
       <motion.h2
         whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
         transition={{ duration: 0.8 }}
@@ -70,9 +70,8 @@ const Work = () => {
         </motion.ul>
         <motion.div
           animate={animateCard}
-          whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="flex flex-wrap mt-10 gap-10 w-full justify-center"
+          className="flex flex-wrap mt-10 gap-10 w-full justify-center pb-14 lg:pb-0"
         >
           {filteredData.map((item) => (
             <div

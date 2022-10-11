@@ -75,12 +75,12 @@ const Header = () => {
           onClick={openModal}
         />
         <Drawer isOpen={isOpen} onClose={closeModal} title="Menu">
-          <ul className="flex flex-col mt-14">
+          <ul className="flex flex-col mt-14 ">
             {navigationPanel.map((item) => (
               <li className="" key={item.name}>
                 <a
                   href={`#${item.name}`}
-                  className="capitalize text-gray-700 text-md flex items-center gap-5 px-4 hover:bg-white py-4 mx-4 my-2 rounded-lg duration-300"
+                  className="capitalize text-gray-700 text-md flex items-center gap-5 px-4 hover:bg-white py-4 mx-4 my-2 rounded-lg duration-300 dark:text-slate-200 dark:hover:bg-slate-700"
                   onClick={closeModal}
                 >
                   <div>{item.icon}</div>
