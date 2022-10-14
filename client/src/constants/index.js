@@ -6,8 +6,8 @@ import BgImg from "../assets/bgIMG.png";
 import BgWhite from "../assets/bgWhite.png";
 import PhoneIcon from "../assets/mobile.png";
 import ChatAppVideo from "../assets/videos/chatapp.mp4";
-import ShopBuddyVideo from "../assets/videos/shopbuddy.webm";
-import KryptVideo from "../assets/videos/krypt.webm";
+import ShopBuddyVideo from "../assets/videos/shopbuddy.mp4";
+import KryptVideo from "../assets/videos/krypt.mp4";
 
 export {
   ReactLogo,
