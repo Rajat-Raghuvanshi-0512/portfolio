@@ -20,7 +20,6 @@ const About = () => {
     <div className="pt-14 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-40 md:h-screen bg-cover bg-center bg-white dark:bg-gradient-to-bl from-black to-slate-800 dark:saturate-50">
       <motion.h2
         whileInView={{ scale: [0, 1.2, 1] }}
-        transition={{ duration: 0.8 }}
         className="text-2xl md:text-4xl font-bold uppercase border-b-2 border-slate-300 w-fit mx-auto pb-3 tracking-widest mt-10 drop-shadow-lg text-center"
       >
         <span className="text-indigo-800">Fields</span>
@@ -30,7 +29,6 @@ const About = () => {
       <motion.div
         whileInView={{
           opacity: [0, 1],
-          y: [100, 0],
         }}
         className="grid px-14 sm:px-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 mt-16 pb-14 lg:pb-0"
       >
