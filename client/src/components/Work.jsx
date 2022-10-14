@@ -3,22 +3,14 @@ import AppWrapper from "../wrapper/AppWrapper";
 import { motion } from "framer-motion";
 import { AiFillEye } from "react-icons/ai";
 import { HiCode } from "react-icons/hi";
-import { useEffect } from "react";
-import { client, urlFor } from "../client";
+import workData from "../workData";
 
 const choices = ["All", "React", "Web 3.0", "MERN Stack"];
 
 const Work = () => {
-  const [data, setData] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState(workData);
   const [selected, setSelected] = useState(choices[0]);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-
-  const fetchData = async (q) => {
-    const newData = await client.fetch(q);
-    setData(newData);
-    setFilteredData(newData);
-  };
 
   const handleClick = (selection) => {
     setSelected(selection);
@@ -26,18 +18,13 @@ const Work = () => {
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
       if (selection === "All") {
-        setFilteredData(data);
+        setFilteredData(workData);
       } else {
-        const newData = data.filter((i) => i.tags.includes(selection));
+        const newData = workData.filter((i) => i.tag.includes(selection));
         setFilteredData(newData);
       }
     }, 500);
   };
-
-  useEffect(() => {
-    const query = '*[_type == "works"]';
-    fetchData(query);
-  }, []);
 
   return (
     <div className="pt-14 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-40 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:bg-blend-overlay dark:saturate-50 dark:backdrop-saturate-150 dark:backdrop-brightness-75">
@@ -75,14 +62,19 @@ const Work = () => {
         >
           {filteredData.map((item) => (
             <div
-              key={item._id}
+              key={item.id}
               className="w-60 bg-white dark:bg-opacity-80 rounded-xl p-4 shadow-md hover:shadow-xl"
             >
               <div className="relative rounded-md overflow-clip">
-                <img
-                  src={urlFor(item.imgUrl)}
-                  alt="circle"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src={`${item.videoUrl}`}
+                  type="video/mp4"
                   className="w-full h-[160px] object-contain bg-gray-200"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute hover:bg-[rgba(0,0,0,0.4)] w-full h-full top-0 left-0 flex items-center justify-center gap-5 duration-300 opacity-0 hover:opacity-100">
                   <motion.a
@@ -111,7 +103,7 @@ const Work = () => {
               </div>
               <div className="relative flex justify-center">
                 <div className="absolute mx-auto text-sm -mt-3 px-2 bg-red-500 w-fit rounded font-light text-white">
-                  {item.tags[0]}
+                  {item.tag}
                 </div>
               </div>
               <h5 className="font-semibold mt-4 mb-2">{item.title}</h5>

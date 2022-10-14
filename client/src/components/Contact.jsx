@@ -56,7 +56,7 @@ const Contact = () => {
       <div className="mt-8 px-10 md:px-0">
         <div>
           <motion.form
-            whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+            whileInView={{ opacity: [0, 1], scale: [0, 1.1, 1] }}
             method="post"
             className="pb-10 lg:py-0"
             onSubmit={handleSubmit}

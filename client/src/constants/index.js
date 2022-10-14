@@ -5,5 +5,19 @@ import Circle from "../assets/circle.svg";
 import BgImg from "../assets/bgIMG.png";
 import BgWhite from "../assets/bgWhite.png";
 import PhoneIcon from "../assets/mobile.png";
+import ChatAppVideo from "../assets/videos/chatapp.mp4";
+import ShopBuddyVideo from "../assets/videos/shopbuddy.webm";
+import KryptVideo from "../assets/videos/krypt.webm";
 
-export { ReactLogo, ReduxLogo, NodeLogo, Circle, BgImg, BgWhite, PhoneIcon };
+export {
+  ReactLogo,
+  ReduxLogo,
+  NodeLogo,
+  Circle,
+  BgImg,
+  BgWhite,
+  PhoneIcon,
+  ChatAppVideo,
+  ShopBuddyVideo,
+  KryptVideo,
+};

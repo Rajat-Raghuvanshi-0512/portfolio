@@ -78,13 +78,11 @@ const Home = () => {
           transition={{ duration: 1.2 }}
           className="flex items-end w-full h-full md:px-14 justify-center relative"
         >
-          {/* <div className="flex items-end bg-gray-300 w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] rounded-full "> */}
           <img
             src="/me.png"
             alt="owner"
             className="w-full h-[300px] md:h-[450px] lg:h-[450px] object-top object-contain drop-shadow-2xl pt-10 z-10"
           />
-          {/* </div> */}
           <div className="absolute w-full h-full  flex justify-center items-center">
             <img
               src={Circle}
@@ -106,7 +104,7 @@ const Home = () => {
             className="w-full h-full  hover:animate-spin cursor-pointer"
           />
         </div>
-        <div className="w-20 h-20 lg:w-28 lg:h-28 mx-10 md:mx-0 md:ml-10 my-5 rounded-full shadow-lg drop-shadow-lg dark:shadow-[rgba(255,255,255,0.15)] p-3 lg:p-4 bg-white dark:bg-opacity-80">
+        <div className="w-20 h-20 lg:w-28 lg:h-28 mx-10 md:mx-0 md:ml-10 my-5 rounded-full shadow-lg drop-shadow-lg dark:shadow-[rgba(255,255,255,0.15)] p-3 lg:p-4 bg-white">
           <img
             src={ReduxLogo}
             alt="react"
