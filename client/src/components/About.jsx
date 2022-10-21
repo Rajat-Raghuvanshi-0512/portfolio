@@ -30,12 +30,7 @@ const About = () => {
         <span className="dark:text-white"> that i have </span>
         <span className="text-red-600">mastered</span>
       </motion.h2>
-      <motion.div
-        whileInView={{
-          opacity: [0, 1],
-        }}
-        className="grid px-14 sm:px-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 mt-16 pb-14 lg:pb-0"
-      >
+      <div className="grid px-14 sm:px-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 mt-16 pb-14 lg:pb-0">
         {data.map((item) => (
           <div
             className="w-full h-full dark:text-white hover:scale-105 duration-500"
@@ -52,7 +47,7 @@ const About = () => {
             <p className="text-sm text-justify">{item.description}</p>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
