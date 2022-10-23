@@ -28,21 +28,15 @@ const Work = () => {
 
   return (
     <div className="pt-14 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-40 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:bg-blend-overlay dark:saturate-50 dark:backdrop-saturate-150 dark:backdrop-brightness-75">
-      <motion.h2
-        whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
-        transition={{ duration: 0.8 }}
-        className="text-2xl md:text-4xl font-bold uppercase border-b-2 border-slate-300 w-fit mx-auto pb-3 tracking-widest mt-10 drop-shadow-lg text-center"
-      >
-        <span className="dark:text-white"> Some of my</span>
-        <span className="text-red-600"> WORK </span>
-        <span className="text-indigo-800">Samples</span>
-      </motion.h2>
+      <motion.div whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}>
+        <h2 className="text-2xl md:text-4xl font-bold uppercase border-b-2 border-slate-300 w-fit mx-auto pb-3 tracking-widest mt-10 drop-shadow-lg text-center">
+          <span className="dark:text-white"> Some of my</span>
+          <span className="text-red-600"> WORK </span>
+          <span className="text-indigo-800">Samples</span>
+        </h2>
+      </motion.div>
       <div className="dark:text-slate-800 mt-10">
-        <motion.ul
-          whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 0.7 }}
-          className="flex flex-wrap gap-10 justify-center items-center"
-        >
+        <ul className="flex flex-wrap gap-10 justify-center items-center">
           {choices.map((item) => (
             <li
               key={item}
@@ -54,7 +48,7 @@ const Work = () => {
               {item}
             </li>
           ))}
-        </motion.ul>
+        </ul>
         <motion.div
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
