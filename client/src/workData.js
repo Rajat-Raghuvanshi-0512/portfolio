@@ -1,4 +1,9 @@
-import { ChatAppVideo, KryptVideo, ShopBuddyVideo } from "./constants";
+import {
+  ChatAppVideo,
+  KryptVideo,
+  ShopBuddyVideo,
+  VoyageVideo,
+} from "./constants";
 
 const data = [
   {
@@ -30,6 +35,16 @@ const data = [
     title: "Chat App",
     videoUrl: ChatAppVideo,
     id: 3,
+  },
+  {
+    codeLink:
+      "https://github.com/Rajat-Raghuvanshi-0512/voyage-tours-and-travels",
+    description: `With Voyage, businesses may save money, improve operational efficiency, and offer convenience to their clients. Also, 'community chat' has been added for the user to find a travel companion.`,
+    projectLink: "https://voyage-tours.netlify.app",
+    tag: "MERN Stack",
+    title: "Voyage Tours and Travels",
+    videoUrl: VoyageVideo,
+    id: 4,
   },
 ];
 

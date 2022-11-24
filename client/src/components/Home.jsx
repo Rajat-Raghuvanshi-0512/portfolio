@@ -49,7 +49,7 @@ const Home = () => {
         transition={{ duration: 1 }}
         className=" md:col-span-2 drop-shadow-lg dark:shadow-[rgba(255,255,255,0.15)] flex-1 flex flex-col gap-y-5 sm:gap-y-10"
       >
-        <div className="bg-white dark:bg-opacity-80 rounded-2xl py-3 px-3 sm:px-5 lg:px-8 sm:py-2 w-fit flex">
+        <div className="bg-white dark:bg-opacity-80 rounded-2xl py-3 px-3 sm:px-5 lg:px-8 sm:py-2 w-fit flex select-none">
           <div className="flex justify-center items-center text-2xl lg:text-4xl pr-3">
             👋
           </div>
@@ -60,7 +60,7 @@ const Home = () => {
             <div className="text-2xl lg:text-4xl font-bold sm:py-2">Rajat</div>
           </div>
         </div>
-        <div className="bg-white dark:bg-opacity-80 rounded-2xl px-3 sm:px-5 lg:px-8 py-2 sm:py-4 flex">
+        <div className="bg-white dark:bg-opacity-80 rounded-2xl px-3 sm:px-5 lg:px-8 py-2 sm:py-4 flex select-none">
           <div className="flex justify-center items-center text-2xl lg:text-3xl pr-3">
             🚀
           </div>
@@ -82,12 +82,14 @@ const Home = () => {
             src="/me.png"
             alt="owner"
             className="w-full h-[300px] md:h-[450px] lg:h-[450px] object-top object-contain drop-shadow-2xl pt-10 z-10"
+            loading="lazy"
           />
           <div className="absolute w-full h-full  flex justify-center items-center">
             <img
               src={Circle}
               alt="circle"
               className="w-full h-full md:w-[370px] md:h-[370px] lg:w-[430px] lg:h-[430px] object-top object-contain absolute md:bottom-5"
+              loading="lazy"
             />
           </div>
         </motion.div>

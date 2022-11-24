@@ -8,6 +8,7 @@ import PhoneIcon from "../assets/mobile.png";
 import ChatAppVideo from "../assets/videos/chatapp.mp4";
 import ShopBuddyVideo from "../assets/videos/shopbuddy.mp4";
 import KryptVideo from "../assets/videos/krypt.mp4";
+import VoyageVideo from "../assets/videos/voyage.mp4";
 
 export {
   ReactLogo,
@@ -20,4 +21,5 @@ export {
   ChatAppVideo,
   ShopBuddyVideo,
   KryptVideo,
+  VoyageVideo,
 };
