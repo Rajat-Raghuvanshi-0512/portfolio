@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMoonOutline } from "react-icons/io5";
 import { IoMdMoon } from "react-icons/io";
 import { useModal } from "../custom-hooks";
 import { motion } from "framer-motion";
 import Drawer from "./Drawer";
-import { useEffect } from "react";
 import navigationPanel from "../utils/NavigationPanel";
 
 const Header = () => {
@@ -62,7 +61,7 @@ const Header = () => {
           >
             <a
               href={`#${item.name}`}
-              className="capitalize text-gray-700 dark:text-slate-100 hover:text-red-700 hover:duration-500 font-medium"
+              className={`capitalize text-gray-700 dark:text-slate-100 hover:text-red-700 hover:duration-500 font-medium`}
             >
               {item.name}
             </a>

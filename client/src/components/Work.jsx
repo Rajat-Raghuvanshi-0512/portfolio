@@ -71,9 +71,9 @@ const Work = () => {
             filteredData.map((item) => (
               <div
                 key={item.id}
-                className="w-60 bg-white dark:bg-opacity-80 rounded-xl p-4 mb-5 shadow-md hover:shadow-xl min-w-[230px]"
+                className="w-60 bg-white dark:bg-opacity-80 rounded-xl p-4 mb-5 shadow-md hover:shadow-xl min-w-[230px] "
               >
-                <div className="relative rounded-md overflow-clip">
+                <div className="relative rounded-md overflow-clip ">
                   <video
                     autoPlay
                     loop
@@ -81,7 +81,7 @@ const Work = () => {
                     playsInline
                     src={`${item.videoUrl}`}
                     type="video/mp4"
-                    className="w-full h-[160px] object-contain bg-gray-200"
+                    className="w-full h-[160px] object-contain bg-gray-200 "
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute hover:bg-[rgba(0,0,0,0.4)] w-full h-full top-0 left-0 flex items-center justify-center gap-5 duration-300 opacity-0 hover:opacity-100">
