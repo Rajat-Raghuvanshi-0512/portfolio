@@ -38,7 +38,7 @@ const Work = () => {
   }, []);
 
   return (
-    <div className="pt-14 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-32 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:bg-blend-overlay dark:saturate-50 dark:backdrop-saturate-150 dark:backdrop-brightness-75">
+    <div className="pt-14 md:pt-16 px-5 sm:px-16 md:px-20 lg:px-28 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:bg-blend-overlay dark:saturate-50 dark:backdrop-saturate-150 dark:backdrop-brightness-75">
       <motion.div whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}>
         <h2 className="text-2xl md:text-4xl font-bold uppercase border-b-2 border-slate-300 w-fit mx-auto pb-3 tracking-widest mt-10 drop-shadow-lg text-center">
           <span className="dark:text-white"> Some of my</span>
@@ -46,7 +46,7 @@ const Work = () => {
           <span className="text-indigo-800">Samples</span>
         </h2>
       </motion.div>
-      <div className="dark:text-slate-800 mt-10 flex flex-col">
+      <div className="dark:text-slate-800 mt-6 flex flex-col">
         <ul className="flex flex-wrap gap-10 justify-center items-center">
           {choices.map((item) => (
             <li
@@ -63,7 +63,7 @@ const Work = () => {
         <motion.div
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="flex flex-wrap lg:flex-nowrap overflow-x-scroll mt-10 gap-10 w-[80vw] pb-14 lg:pb-0 justify-center"
+          className="flex flex-wrap lg:flex-nowrap overflow-x-scroll mt-8 gap-10 pb-14 lg:pb-0 justify-center"
         >
           {loading ? (
             <Loader />
@@ -117,7 +117,7 @@ const Work = () => {
                   </div>
                 </div>
                 <h5 className="font-semibold mt-4 mb-2">{item.title}</h5>
-                <p className=" text-[12px] text-justify">{item.description}</p>
+                <p className="text-sm lg:text-[10px] leading-4 text-justify">{item.description}</p>
               </div>
             ))
           )}

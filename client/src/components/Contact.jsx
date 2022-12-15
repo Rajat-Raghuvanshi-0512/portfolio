@@ -53,7 +53,7 @@ const Contact = () => {
         <span className="dark:text-white"> about </span>
         <span className="text-indigo-800"> me</span>
       </motion.h2>
-      <div className="mt-8 px-10 md:px-0">
+      <div className="mt-8">
         <div>
           <motion.form
             whileInView={{ opacity: [0, 1], scale: [0, 1.1, 1] }}
@@ -109,7 +109,7 @@ const Contact = () => {
                   href="mailto:rajat.karnal@gmail.com"
                   className="flex items-center gap-3 bg-white dark:bg-slate-200 py-3 px-5 rounded-lg text-sm drop-shadow-md"
                 >
-                  <HiMail className="w-10 h-10 text-indigo-700" />
+                  <HiMail className="w-7 h-7 text-indigo-700" />
                   Rajat.karnal@gmail.com
                 </motion.a>
 
@@ -121,14 +121,14 @@ const Contact = () => {
                   <img
                     src={PhoneIcon}
                     alt="phone"
-                    className="w-10 h-10 object-contain"
+                    className="w-7 h-7 object-contain"
                   />
                   +91 9034101507
                 </motion.a>
                 {!isFormSubmitted && (
                   <button
                     type="submit"
-                    className="bg-blue-700 text-white px-5 rounded-lg py-3 lg:my-2 font-semibold drop-shadow-lg hidden md:block hover:bg-blue-800 disabled:bg-blue-600 hover:scale-95 duration-300"
+                    className="bg-blue-700 text-white px-5 rounded-lg py-2 font-semibold drop-shadow-lg hidden md:block hover:bg-blue-800 disabled:bg-blue-600 hover:scale-95 duration-300"
                     disabled={loading}
                   >
                     Send Now

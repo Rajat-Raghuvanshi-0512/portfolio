@@ -37,10 +37,10 @@ const About = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="grid px-14 sm:px-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10 pb-14 lg:pb-0">
+        <div className="grid px-5 sm:px-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 pb-14 lg:pb-0">
           {data.map((item) => (
             <div
-              className="w-full h-fit dark:text-white hover:scale-105 duration-500 hover:bg-gray-100 dark:hover:bg-black p-5 rounded-2xl"
+              className="w-full drop-shadow-md hover:shadow-lg cursor-default dark:text-white hover:scale-105 duration-500 hover:bg-gray-100 dark:hover:bg-black p-5 rounded-2xl"
               key={item.title}
             >
               <div className="w-full h-[200px] md:h-[170px] overflow-hidden">
@@ -51,7 +51,7 @@ const About = () => {
                 />
               </div>
               <p className="font-bold text-xl text-center py-5">{item.title}</p>
-              <p className="text-sm text-justify">{item.description}</p>
+              <p className="text-sm lg:text-[10px] text-justify">{item.description}</p>
             </div>
           ))}
         </div>

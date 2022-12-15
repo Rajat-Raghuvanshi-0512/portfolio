@@ -66,7 +66,7 @@ const Home = () => {
           </div>
           <div>
             <div className="text-sm pt-2 sm:pt-0 sm:py-2">I am</div>
-            <div className="text-xl font-semibold py-2 break-words">
+            <div className="text-xl font-bold py-2 break-words">
               {text}❗
             </div>
           </div>
@@ -81,7 +81,7 @@ const Home = () => {
           <img
             src="/me.png"
             alt="owner"
-            className="w-full h-[300px] md:h-[450px] lg:h-[450px] object-top object-contain drop-shadow-2xl pt-10 z-10"
+            className="w-full h-[300px] md:h-[450px] lg:h-[450px] object-top object-contain drop-shadow-2xl pt-10 z-10 rounded-[50%] md:rounded-none"
             loading="lazy"
           />
           <div className="absolute w-full h-full  flex justify-center items-center">
@@ -95,7 +95,7 @@ const Home = () => {
         </motion.div>
       </div>
       <motion.div
-        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        animate={{ scale: [0, 1], opacity: [0, 1] }}
         transition={{ duration: 0.7 }}
         className="flex md:flex-col justify-center pb-14 lg:pb-0"
       >

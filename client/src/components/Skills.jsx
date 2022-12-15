@@ -40,7 +40,7 @@ const Skills = () => {
         <span className="dark:text-white"> & </span>
         <span className="text-indigo-800">Experience</span>
       </motion.h2>
-      <div className="flex flex-col md:flex-row gap-16 p-10 dark:text-slate-200">
+      <div className="flex flex-col md:flex-row gap-16 py-10 dark:text-slate-200">
         {loading ? (
           <Loader />
         ) : (
@@ -51,7 +51,7 @@ const Skills = () => {
               className="grid grid-cols-2 lg:grid-cols-3 flex-1 gap-y-16 gap-x-4 h-fit flex-wrap"
             >
               {skills.map((item) => (
-                <div className="flex items-center gap-2" key={item.name}>
+                <div className="flex items-center gap-3" key={item.name}>
                   <img
                     src={urlFor(item.icon)}
                     className="w-14 h-14 p-3 bg-slate-100 rounded-full object-contain"
