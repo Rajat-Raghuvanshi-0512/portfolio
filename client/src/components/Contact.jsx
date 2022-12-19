@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-20 md:pt-20 px-5 lg:px-20 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:saturate-50 dark:bg-blend-overlay dark:backdrop-saturate-150 dark:backdrop-brightness-75">
+    <div className="pt-20 md:pt-20 px-5 lg:px-20 md:h-screen bg-cover bg-center dark:bg-[rgba(0,0,0,0.85)] bg-bgLight dark:bg-bgDark dark:saturate-50 dark:bg-blend-overlay dark:backdrop-saturate-150 dark:backdrop-brightness-75 overflow-x-hidden">
       <h2
         ref={headingref}
         className={`text-2xl md:text-4xl font-bold uppercase border-b-2 border-slate-300 w-fit mx-auto pb-3 tracking-widest mt-10 drop-shadow-lg text-center ${
