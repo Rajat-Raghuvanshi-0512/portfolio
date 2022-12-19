@@ -10,7 +10,7 @@ const data = [
     codeLink: "https://github.com/Rajat-Raghuvanshi-0512/MERN-Ecommerce",
     description:
       "Shop Buddy is an attempt to serve the people of India with unique designs on apparels. E-commerce is revolutionising the way we all shop in India.",
-    projectLink: "https://myshopbuddy.herokuapp.com/",
+    projectLink: "https://shop-buddy.onrender.com",
     tag: "MERN Stack",
     title: "Shop Buddy",
     videoUrl: ShopBuddyVideo,

@@ -3,13 +3,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMoonOutline } from "react-icons/io5";
 import { IoMdMoon } from "react-icons/io";
 import { useModal } from "../custom-hooks";
-import { motion } from "framer-motion";
 import Drawer from "./Drawer";
 import navigationPanel from "../utils/NavigationPanel";
+import { useInView } from "react-intersection-observer";
 
 const Header = () => {
   const { isOpen, openModal, closeModal } = useModal();
   const [isChecked, setIsChecked] = useState(false);
+  const [ref, InView] = useInView();
 
   const toogleDarkMode = (e) => {
     if (document.body.classList.contains("dark")) {
@@ -31,10 +32,11 @@ const Header = () => {
   }, []);
 
   return (
-    <motion.div
-      whileInView={{ y: [-70, 0], opacity: [0, 1] }}
-      transition={{ duration: 1 }}
-      className="flex justify-between px-4 sm:px-10 md:px-16 lg:px-40 py-5 backdrop-blur-sm fixed w-full z-50 bg-gradient-to-r from-[#C0C8D5aa] to-[#fff] drop-shadow-lg bg-opacity-40 dark:from-black dark:to-slate-800 dark:text-white border-b border-gray-200 dark:border-slate-800"
+    <div
+      className={`flex justify-between px-4 sm:px-10 md:px-16 lg:px-40 py-5 backdrop-blur-sm fixed w-full z-50 bg-gradient-to-r from-[#C0C8D5aa] to-[#fff] drop-shadow-lg bg-opacity-40 dark:from-black dark:to-slate-800 dark:text-white border-b border-gray-200 dark:border-slate-800 ${
+        InView && "slide-from-top"
+      }`}
+      ref={ref}
     >
       <h2 className=" flex gap-10">
         <span className="bg-gradient-to-br from-slate-600 to-black dark:from-white dark:to-gray-500 bg-clip-text text-transparent text-2xl lg:text-3xl font-roboto hover:scale-105 duration-500 cursor-default">
@@ -90,7 +92,7 @@ const Header = () => {
           </ul>
         </Drawer>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

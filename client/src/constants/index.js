@@ -5,6 +5,10 @@ import Circle from "../assets/circle.svg";
 import BgImg from "../assets/bgIMG.png";
 import BgWhite from "../assets/bgWhite.png";
 import PhoneIcon from "../assets/mobile.png";
+import AppDev from "../assets/app_dev.jpg";
+import BackDev from "../assets/backend_dev.jpg";
+import FrontDev from "../assets/frontend_dev.jpg";
+import BlockDev from "../assets/blockchain_dev.jpg";
 import ChatAppVideo from "../assets/videos/chatapp.mp4";
 import ShopBuddyVideo from "../assets/videos/shopbuddy.mp4";
 import KryptVideo from "../assets/videos/krypt.mp4";
@@ -22,4 +26,8 @@ export {
   ShopBuddyVideo,
   KryptVideo,
   VoyageVideo,
+  AppDev,
+  FrontDev,
+  BackDev,
+  BlockDev,
 };

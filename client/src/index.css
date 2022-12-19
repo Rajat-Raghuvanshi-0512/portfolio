@@ -13,6 +13,130 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.slide-from-left {
+  opacity: 0;
+  animation: slide-from-left 1.6s alternate forwards;
+}
+
+.slide-from-right {
+  opacity: 0;
+  animation: slide-from-right 1.6s alternate forwards;
+}
+.slide-from-top {
+  opacity: 0;
+  animation: slide-from-top 1.6s alternate forwards;
+}
+.fade-in {
+  opacity: 0;
+  animation: fade-in 1.6s alternate forwards;
+}
+.fade-scale-in {
+  opacity: 0;
+  animation: fade-scale-in 1.6s alternate forwards;
+}
+
+.animation-delay:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.animation-delay:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.animation-delay:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.animation-delay:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+.animation-delay:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+.animation-delay:nth-child(7) {
+  animation-delay: 600ms;
+}
+
+.animation-delay:nth-child(8) {
+  animation-delay: 700ms;
+}
+
+.animation-delay:nth-child(9) {
+  animation-delay: 800ms;
+}
+
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slide-from-left:nth-child(2),
+.slide-from-right:nth-child(2) {
+  animation-delay: 100ms;
+}
+.slide-from-left:nth-child(3),
+.slide-from-right:nth-child(3) {
+  animation-delay: 200ms;
+}
+.slide-from-left:nth-child(4),
+.slide-from-right:nth-child(4) {
+  animation-delay: 300ms;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
