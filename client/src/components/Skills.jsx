@@ -69,10 +69,10 @@ const Skills = () => {
             </div>
             <div
               ref={dataref}
-              className={`flex-1 ${dataInView && "slide-from-right"}`}
+              className={`flex-1 ${dataInView && "slide-from-right"} h-[58vh] overflow-y-scroll `}
             >
               {experience
-                .sort((a, b) => a.year - b.year)
+                .sort((a, b) => b.year - a.year)
                 .map((exp, i) => (
                   <div className="flex gap-5" key={i}>
                     <div className="font-bold">{exp.year}</div>
