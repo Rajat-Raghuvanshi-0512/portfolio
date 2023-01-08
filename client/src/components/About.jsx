@@ -19,7 +19,7 @@ const About = () => {
         }`}
         ref={headingref}
       >
-        <span className="text-indigo-800">Fields</span>
+        <span className="text-blue-700">Fields</span>
         <span className="dark:text-white"> that i have </span>
         <span className="text-red-600">mastered</span>
       </h2>

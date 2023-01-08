@@ -57,7 +57,7 @@ const Contact = () => {
         <span className="dark:text-white"> Wanna know </span>
         <span className="text-red-600"> more </span>
         <span className="dark:text-white"> about </span>
-        <span className="text-indigo-800"> me</span>
+        <span className="text-blue-700"> me</span>
       </h2>
       <div className="mt-8">
         <div>

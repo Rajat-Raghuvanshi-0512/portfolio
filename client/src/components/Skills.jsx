@@ -40,7 +40,7 @@ const Skills = () => {
       >
         <span className="text-red-600"> Skills</span>
         <span className="dark:text-white"> & </span>
-        <span className="text-indigo-800">Experience</span>
+        <span className="text-blue-700">Experience</span>
       </h2>
       <div className="flex flex-col md:flex-row gap-16 py-10 dark:text-slate-200">
         {loading ? (

@@ -46,7 +46,7 @@ const Work = () => {
       >
         <span className="dark:text-white"> Some of my</span>
         <span className="text-red-600"> WORK </span>
-        <span className="text-indigo-800">Samples</span>
+        <span className="text-blue-700">Samples</span>
       </h2>
       <div className="dark:text-slate-800 mt-6 flex flex-col">
         <ul className="flex flex-wrap gap-10 justify-center items-center">
